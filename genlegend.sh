@@ -1,4 +1,7 @@
 #!/bin/bash
+# Prints the command that will generate a color key for overlay in a corner of
+# the screen in a kml file.
+# Usage: ./genlegend.sh < "basename.dcf" | sh
 i=0
 output=
 while read line
