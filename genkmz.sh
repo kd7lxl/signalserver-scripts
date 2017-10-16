@@ -19,6 +19,7 @@ do
 <Document>
 <GroundOverlay>
     <name>${filename}</name>
+    <color>a0ffffff</color>
     <Icon>
         <href>${filename}.png</href>
     </Icon>
