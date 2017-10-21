@@ -13,6 +13,6 @@ fi
 for name; do true; done
 
 #time ./signalserverHD -sdf $SRTMDIR/SRTM1 -dbm -pm 1 -dbg $@ 2>&1
-time ./signalserver -sdf $SRTMDIR/SRTM3 -dbm -pm 1 -dbg $@ 2>&1
+time nice ./signalserver -sdf $SRTMDIR/SRTM3 -dbm -pm 1 -dbg $@ 2>&1
 # to resize, add: -resize 7000x7000\>
 convert $name.ppm -transparent white $name.png
