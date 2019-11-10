@@ -13,7 +13,7 @@ class AntFile(object):
             self.el = [float(next(ant)) for i in xrange(360)]
 
     def offset_az(self, direction):
-        return [self.az[(i + direction) % 360] for i in xrange(360)]
+        return [self.az[(i - direction) % 360] for i in xrange(360)]
 
 
 def main():
