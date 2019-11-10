@@ -1,4 +1,7 @@
 #!/bin/bash
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+PATH=$DIR:$PATH
+
 while read line
 do
 	echo $line
@@ -46,7 +49,7 @@ EOF
 		done <<< $line
 	fi
 done
-./genlegend.sh < "${filename}.dcf" | sh
+genlegend.sh < "${filename}.dcf" | sh
 zip "${filename}" "${filename}.png" doc.kml legend.png
 mv "${filename}".zip "${filename}".kmz
 echo Generated "${filename}".kmz
