@@ -1,0 +1,1 @@
+hamwansectors.sh
