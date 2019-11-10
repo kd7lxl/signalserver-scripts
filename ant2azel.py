@@ -4,7 +4,7 @@ from os.path import splitext
 
 
 def db_to_norm(db):
-    return 10**(db/10.)
+    return 10**(db/20.)
 
 
 antfilename = sys.argv[1]
