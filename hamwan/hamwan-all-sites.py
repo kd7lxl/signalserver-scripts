@@ -28,6 +28,7 @@ tower_height_feet = {
     "CapitolPark": 140,
     "Capitol Peak": 80,
     "Lookout": 100,
+    "Buck": 25,
 }
 
 
